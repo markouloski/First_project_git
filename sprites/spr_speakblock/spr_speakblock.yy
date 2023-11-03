@@ -6,27 +6,27 @@
   "bbox_left": 0,
   "bbox_right": 15,
   "bbox_top": 0,
-  "bboxMode": 1,
+  "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
   "DynamicTexturePage": false,
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f6b6b11a-870b-49b0-ac93-364400a11e4f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"55641ebf-8f23-4a8f-a64a-91e8231be712",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1e8816a8-e737-4663-a12a-f9aa282cc3dc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"05a2f2eb-f23d-45a6-9af0-d95114291a7b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "MainMenu",
-    "path": "folders/MainMenu.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f6b6b11a-870b-49b0-ac93-364400a11e4f","path":"sprites/spr_speakblock/spr_speakblock.yy",},},},"Disabled":false,"id":"759bfb36-e4b1-4948-aec8-fe82e83f4510","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"55641ebf-8f23-4a8f-a64a-91e8231be712","path":"sprites/spr_speakblock/spr_speakblock.yy",},},},"Disabled":false,"id":"70705695-814c-49e4-89bf-d283209a32f8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

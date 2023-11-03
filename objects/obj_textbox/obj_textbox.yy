@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "MainMenu",
-    "path": "folders/MainMenu.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_menu",
+    "path": "sprites/spr_menu/spr_menu.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
