@@ -16,11 +16,7 @@ function scr_game_text(_text_id){
 		scr_text("Good every monster naturally has the skills and experiences from every species that came before it in totality and at their peaks");
 		break;
 		
-		case "npc 2":
 		
-			scr_text("Leave Boy!");
-			
-		break;
 		
 	}
 }
