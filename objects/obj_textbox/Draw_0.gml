@@ -4,7 +4,6 @@ textbox_x = camera_get_view_x( view_camera[0] );
 textbox_y = camera_get_view_y( view_camera[0] ) + 144;
 
 //setup
-
 if setup == false
 	{
 	setup = true;
@@ -14,13 +13,12 @@ if setup == false
 	
 	//loop through the pages
 	for(var p = 0; p < page_number; p++)
-	{
+		{
 		//find how many characters are on each page and store that number in "text_length" array
 		text_length[p] = string_length(text[p]);
 		// get x pos for the textbox
-		//this is for having no character, center textbox on screen
 		text_x_offset[p] = 44;
-		
+
 		//setting indivdual characters and finding where the lines of text should break
 		for (var c=0; c < text_length[p]; c++)
 		{
@@ -79,15 +77,12 @@ if setup == false
 	}
 }
 	
-}
-
-//typinh the text
+//typing the text
 if draw_char < text_length[page]
 		{
 			draw_char += text_spd;
 			draw_char = clamp(draw_char, 0, text_length[page]);
 		}
-		
 //flip through pages
 if accept_key
 	{
@@ -118,17 +113,14 @@ if accept_key
 	}
 
 
-//options
-#region
 //draw the textbox
-textb_img += textb_img_spd;
-textb_spr_w = sprite_get_width(textb_spr[page]);
-textb_spr_h = sprite_get_height(textb_spr[page]);
-//text_x_offset is not set at line 68
 var _txtb_x = textbox_x + text_x_offset[page];
-var  _txtb_y = textbox_y;
-//back of the textbox
-draw_sprite_ext(textb_spr[page], textb_img, _txtb_x, _txtb_y, textbox_width/textb_spr_w, textbox_height/textb_spr_h, 0, c_white, 1);
+var _txtb_y = textbox_y;
+textb_img += textb_img_spd;
+textb_spr_w = sprite_get_width(txtb_spr);
+textb_spr_h = sprite_get_height(txtb_spr);
+//draw back of textbox
+draw_sprite_ext(txtb_spr, textb_img, _txtb_x, _txtb_y, textbox_width/textb_spr_w, textbox_height/textb_spr_h, 0, c_white, 1 );
 
 if draw_char == text_length[page] && page == page_number - 1
 {
@@ -142,8 +134,7 @@ if draw_char == text_length[page] && page == page_number - 1
 	{
 		//draw option box
 		var _o_w = string_width(option[_op]) + _op_bord*2;
-		draw_sprite_ext(spr_menu, textb_img, _txtb_x + 16, _txtb_y - _op_space*option_number + _op_space*_op, _o_w/textb_spr_w, (_op_space-1)/textb_spr_h, 0, c_white, 1);
-		
+		draw_sprite_ext(txtb_spr, textb_img, _txtb_x + 16, _txtb_y - _op_space*option_number + _op_space*_op, _o_w/textb_spr_w, (_op_space-1)/textb_spr_h, 0, c_white, 1);
 		//The arrow
 		if option_pos == _op
 		{
@@ -153,11 +144,11 @@ if draw_char == text_length[page] && page == page_number - 1
 		draw_text(_txtb_x + 16 + _op_bord, _txtb_y - _op_space*option_number + _op_space*_op + 2, option[_op] );
 	}
 }
+
 //draw the text
 for(var c = 0; c < draw_char; c++)
 {
 	//the text
 	draw_text(char_x[c, page], char_y[c, page], char[c, page] );
 }
-
-#endregion
+	}
