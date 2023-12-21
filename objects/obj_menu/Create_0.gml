@@ -9,8 +9,8 @@ op_space = 16;
 pos = 0;
 
 option[0, 0] = "Start Game";
-option[1, 1] = "Settings";
-option[2, 2] = "Quit Game";
+option[0, 1] = "Settings";
+option[0, 2] = "Quit Game";
 
 option[1, 0] = "Window Size";
 option[1, 1] = "Brightness";

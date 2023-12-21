@@ -116,6 +116,7 @@ if accept_key
 //draw the textbox
 var _txtb_x = textbox_x + text_x_offset[page];
 var _txtb_y = textbox_y;
+
 textb_img += textb_img_spd;
 textb_spr_w = sprite_get_width(txtb_spr);
 textb_spr_h = sprite_get_height(txtb_spr);

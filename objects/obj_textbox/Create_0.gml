@@ -20,9 +20,8 @@ char[0, 0] = "";
 char_x[0, 0] = 0;
 char_y[0, 0] = 0;
 
+setup = false;
 
-
-text_x_offset[0] = 0;
 
 draw_char = 0;
 text_spd = 1;
@@ -32,6 +31,6 @@ option_link_id = -1;
 option_pos = 0;
 option_number = 0;
 
+//EFFECTS
 last_free_space = 0;
 scr_set_defaults_for_text();
-setup = false;
